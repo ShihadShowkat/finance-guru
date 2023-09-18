@@ -1,0 +1,159 @@
+:root {
+    --panels: transparent;
+    --primary: #222222;
+    --secondary : #2d2d2d;
+    --raleway: 'Raleway', sans-serif;
+    --mukta: 'Mukta', sans-serif;
+    --candara: Candara;
+    --allura: Allura;
+    --outline: 3px solid red;
+    --facebook: #3B5998;
+    --twitter: #00ACED;
+    --youtube: #BB0000;
+}
+
+@font-face {
+    font-family: Allura;
+    src: url(fonts/Allura-Regular.ttf);
+}
+
+@font-face {
+    font-family: Candara;
+    src: url(fonts/Candara.ttf);
+}
+
+@font-face {
+    font-family: Candara-Bold;
+    src: url(fonts/Candara_Bold.ttf);
+}
+
+body{
+    margin: auto;
+    padding: auto;
+    color: white;
+}
+
+p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.home{
+    /* overflow: hidden; */
+}
+
+.home .background img{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.home .navigation{
+    height: 50px;
+    /* outline: var(--outline); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+}
+
+.home .navigation .logo p{
+    font-family: var(--raleway);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.home .navigation .nav-bar ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: var(--raleway);
+    font-size: 18px;
+    display: flex;
+}
+
+.home .navigation .nav-bar ul li{
+    margin-inline: 30px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    transition: 0.5s ease;
+}
+
+.home .navigation .nav-bar ul .active{
+    border-bottom: 1px solid white;
+}
+
+.home .navigation .nav-bar ul li:hover{
+    border-bottom: 1px solid white;
+    transition: all 0.5s ease;
+}
+
+.home .navigation .extras{
+    display: flex;
+    /* outline: var(--outline); */
+    align-items: center;
+    height: 50px;
+}
+
+.home .navigation .extras .login{
+    font-family: var(--candara);
+    font-size: 20px;
+    margin-right: 15px;
+    width: 95px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.home .navigation .extras .cart{
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.home .content{
+    /* outline: var(--outline); */
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .content .title p{
+    font-family: var(--candara);
+    font-size: 50px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.home .content .sub-title p{
+    font-family: var(--candara);
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.home .content .explore{
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    font-family: var(--candara);
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px black;
+}
+
+.home .content .explore:hover{
+    box-shadow: none;
+}
